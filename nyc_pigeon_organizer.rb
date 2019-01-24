@@ -10,17 +10,17 @@ def nyc_pigeon_organizer(data)
   end
   data[:color].each do |color_name, arr_birds|
     arr_birds.each do |bird|
-      bird_hash[bird][:color] = [color_name]
+      bird_hash[bird][:color] = [color_name.to_s]
     end
   end
   data[:gender].each do |gender_name, arr_birds|
     arr_birds.each do |bird|
-      bird_hash[bird][:gender] = [gender_name]
+      bird_hash[bird][:gender] = [gender_name.to_s]
     end
   end
   data[:lives].each do |location, arr_birds|
     arr_birds.each do |bird|
-      bird_hash[bird][:lives] = [location]
+      bird_hash[bird][:lives] = [location.to_s]
     end
   end
   
