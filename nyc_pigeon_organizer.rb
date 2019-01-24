@@ -8,6 +8,11 @@ def nyc_pigeon_organizer(data)
       bird_hash[bird] = {}
     end
   end
+  data[:color].each do |color_name, arr_birds|
+    arr_birds.each do |bird|
+      bird_hash[bird][:color] = [color_name]
+    end
+  end
   
   bird_hash
 end
