@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
       if bird_hash[bird][:color].length == 0
         bird_hash[bird][:color] = [color_name.to_s]
       else
-        bird_hash[bird][:color] << [color_name.to_s]
+        bird_hash[bird][:color] << color_name.to_s
       end
     end
   end
